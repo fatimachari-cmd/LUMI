@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-noche: #0B1026;
+    --color-bosque: #12261E;
+    --color-arbol: #1F3B2A;
+
+    --color-texto: #F5F0E1;
+    --color-texto-suave: #A9B4C2;
+    --color-error: #FF8A8A;
+
+    --color-panel: rgba(26, 34, 64, 0.85);
+    --color-borde-panel: #2E3966;
+    --color-borde-suave: #A9A3C7;
+    --color-campo: #1A2240;
+
+    --color-boton: #FFC94D;
+    --color-boton-claro: #FFE58A;
+    --color-boton-oscuro: #FFC12E;
+
+    --color-luz: #FFD86B;
+    --color-luz-especial: #BFE9FF;
+
+    --color-j1: #4FD1C5;
+    --color-j2: #F78FB3;
+    --color-j3: #A78BFA;
+    --color-j4: #B5E655;
+
+    --color-telarana: #C9CED6;
+    --color-niebla: #8E8AA8;
+
+    --fuente-titulo: 'Cinzel', serif;
+    --fuente-texto: 'Nunito', sans-serif;
+
+    --radio-boton: 999px;
+    --radio-panel: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-noche);
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuente-titulo);
+}

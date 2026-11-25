@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUMI · Bosque mágico</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/pantallas.css">
+</head>
+
+<body>
+
+    <header class="barra-superior">
+        <button type="button" id="btnSonido"
+                class="btn-icono"
+                aria-label="Sonido"
+                aria-pressed="true"><img src="assets/img/icono-sonido.svg"
+                         class="icono-icono"
+                         alt="">
+        </button>
+    </header>
+
+    <main>
+
+        <section id="pantalla-inicio" class="pantalla pantalla-inicio">
+
+            <h1 class="logo">LUMI</h1>
+
+            <p class="subtitulo">
+                Recoge la luz del bosque mágico
+            </p>
+
+            <form id="formInicio" class="form-inicio">
+
+                <label for="nombreJugador">Tu nombre</label>
+
+                <div class="campo-nombre">
+
+                    <img src="assets/img/icono-usuario.svg"
+                         class="icono-usuario"
+                         alt="">
+
+                    <input type="text"
+                           id="nombreJugador"
+                           name="nombre"
+                           placeholder="Escribe tu nombre"
+                           maxlength="12"
+                           autocomplete="off">
+                </div>
+
+                <p id="errorNombre"
+                   class="mensaje-error"
+                   role="alert"></p>
+
+                <div class="botones-inicio">
+
+                    <button type="submit"
+                            id="btnJugar"
+                            class="btn btn-principal">
+                        <span aria-hidden="true">▶</span>
+                        Jugar
+                    </button>
+
+                    <button type="button"
+                            id="btnComoJugar"
+                            class="btn btn-secundario">
+                        <span aria-hidden="true">♧</span>
+                        Cómo se juega
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Un pequeño mundo mágico de luciérnagas</p>
+    </footer>
+
+</body>
+</html>
